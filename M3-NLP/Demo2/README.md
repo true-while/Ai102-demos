@@ -3,10 +3,12 @@
 - Translate Text
 - Integration with Bot service
 
-This code is provided for demo purpose only for course AI-102.
+This code is provided for demo purposes only for course AI-102.
 
 ### Requirements
 - Azure Subscription
+- .Net core 3.1
+- VS Code or VS 2019
 
 ## Translate Text
 
