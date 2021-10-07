@@ -19,10 +19,10 @@ This code for demonstration only during deliveries of course AI-102
 ## M04 Building Speech-Enabled Applications
 - [Demo #1 Text to Speech](./M4-Speech/Demo1)
 - [Demo #2 Speech to text](./M4-Speech/Demo2)
-- [Demo #3 Synthesizing Translations (C#)](./M4-Speech/Demo3)
+- [Demo #3 Synthesizing Translations (Node.js)](./M4-Speech/Demo3)
 
 ## M05 Creating Language Understanding Solutions
 - [Demo #1 LU Intro](./M5-LU/Demo1)
 - [Demo #2 LU Modeling](./M5-LU/Demo2)
 - [Demo #3 LU Integration (C#)](./M5-LU/Demo3)
-- [Demo #3 Speech Integration (C#)](./M5-LU/Demo4)
+- [Demo #3 Speech Integration (Node.js)](./M5-LU/Demo4)
