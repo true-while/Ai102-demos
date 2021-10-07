@@ -26,3 +26,7 @@ This code for demonstration only during deliveries of course AI-102
 - [Demo #2 LU Modeling](./M5-LU/Demo2)
 - [Demo #3 LU Integration (C#)](./M5-LU/Demo3)
 - [Demo #3 Speech Integration (Node.js)](./M5-LU/Demo4)
+
+## M06 Building a QnA Solution
+- [Demo #1 QnA Maker](./M6-QnA/Demo1)
+- [Demo #2 QnA Bot](./M6-QnA/Demo2)
