@@ -11,7 +11,12 @@ This code for demonstration only during deliveries of course AI-102
 - [Demo #3 Setting up alerts](./M2-AI_and_ACI/Demo3)
 - [Demo #3 Running containers locally and with ACI (Docker, Azure ML)](./M2-AI_and_ACI/Demo4)
 
-## M02 Getting Started with Natural Language Processing
+## M03 Getting Started with Natural Language Processing
 - [Demo #1 Text Analytics (C#)](./M3-NLP/Demo1)
 - [Demo #2 Translate Tex and bot integration (C#)](./M3-NLP/Demo2)
 - [Demo #3 Custom Translator](./M3-NLP/Demo3)
+
+## M04 Building Speech-Enabled Applications
+- [Demo #1 Text to Speech](./M4-Speech/Demo1)
+- [Demo #2 Speech to text](./M4-Speech/Demo2)
+- [Demo #3 Synthesizing Translations (C#)](./M4-Speech/Demo3)
