@@ -1,6 +1,6 @@
 # AI-102 Demo materials
 
-This code for demonstration only during deliveries of course AI-102
+This materials is for demonstration only and should be used during deliveries of course AI-102 only
 
 ## M01 Introduction to AI on Azure
 - no demos
@@ -36,8 +36,12 @@ This code for demonstration only during deliveries of course AI-102
 - [Demo #2 Adaptive Card (C#)](./M7-Bots/Demo2)
 - [Demo #3 Bot Composer](./M7-Bots/Demo3)
 
-
 ## M07 Getting Started with Computer Vision
 - [Demo #1 Computer Vision (Python)](./M8-CompVision/Demo1)
 - [Demo #2 Video Analyzer (C#)](./M8-CompVision/Demo2)
+
+## M08 Developing Custom Vision Solutions
+- [Demo #1 Image Classification](./M9-CustomVision/Demo1)
+- [Demo #2 Detection Objects](./M9-CustomVision/Demo2)
+- [Demo #3 Fruit Detector on IoT Edge (Python)](./M9-CustomVision/Demo3)
 
