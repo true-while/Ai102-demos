@@ -30,3 +30,8 @@ This code for demonstration only during deliveries of course AI-102
 ## M06 Building a QnA Solution
 - [Demo #1 QnA Maker](./M6-QnA/Demo1)
 - [Demo #2 QnA Bot](./M6-QnA/Demo2)
+
+## M07 Conversational AI and the Azure Bot Service
+- [Demo #1 Create a Bot from Azure Portal](./M7-Bot/Demo1)
+- [Demo #2 Adaptive Card (C#)](./M7-Bot/Demo2)
+- [Demo #3 Bot Composer](./M7-Bot/Demo3)

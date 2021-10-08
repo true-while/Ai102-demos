@@ -1,0 +1,115 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "c5kOdu",
+    "name": "getWeather",
+    "description": "Get the current weather condition for the provide zip code."
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "V82O4I"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "0UCDtX"
+          },
+          "activity": "${SendActivity_0UCDtX()}"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "uHSV7Q"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "property": "user.zipcode",
+          "outputFormat": "=trim(this.value)",
+          "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_uHSV7Q()}",
+          "invalidPrompt": "${TextInput_InvalidPrompt_uHSV7Q()}",
+          "defaultValueResponse": "${TextInput_DefaultValueResponse_uHSV7Q()}",
+          "prompt": "${TextInput_Prompt_uHSV7Q()}"
+        },
+        {
+          "$kind": "Microsoft.HttpRequest",
+          "$designer": {
+            "id": "siPPYr"
+          },
+          "method": "GET",
+          "url": "http://api.openweathermap.org/data/2.5/weather?units=imperial&zip=${user.zipcode},us&appid=6c3268f83a71089e8a2de08d133b4a3a",
+          "resultProperty": "dialog.api_response"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "CfF45l"
+          },
+          "condition": "=dialog.api_response.statusCode == 200",
+          "actions": [
+            {
+              "$kind": "Microsoft.SetProperty",
+              "$designer": {
+                "id": "Cm5Mob"
+              },
+              "property": "dialog.weather",
+              "value": "=dialog.api_response.content"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "h2h5aY"
+              },
+              "activity": "${SendActivity_h2h5aY()}"
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "r9VOOC"
+              },
+              "activity": "${SendActivity_r9VOOC()}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.DeleteProperty",
+          "$designer": {
+            "id": "jy8diI"
+          },
+          "property": "user.zipcode"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "WgBjWE",
+        "name": "cancel-lu"
+      },
+      "intent": "cancel-lu",
+      "actions": [
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "yaUqhq"
+          },
+          "activityProcessed": true,
+          "dialog": "cancel"
+        }
+      ]
+    }
+  ],
+  "generator": "getWeather.lg",
+  "recognizer": "getWeather.lu.qna",
+  "id": "getWeather"
+}

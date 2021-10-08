@@ -1,0 +1,12 @@
+[import](common.lg)
+
+
+# SendActivity_859266()
+- Hello. I'm WeatherBot. Enter "weather" to start.
+- Hi! I am WeatherBot and can retrieve weather conditions for you. Try saying "weather".
+- Need to know the weather conditions? Say "weather" and I can help.
+
+# TextInput_Prompt_3TRbpX()
+- What's your name?
+# SendActivity_f1XClu()
+- Hello ${user.name}, nice to meet you!
