@@ -35,3 +35,9 @@ This code for demonstration only during deliveries of course AI-102
 - [Demo #1 Create a Bot from Azure Portal](./M7-Bots/Demo1)
 - [Demo #2 Adaptive Card (C#)](./M7-Bots/Demo2)
 - [Demo #3 Bot Composer](./M7-Bots/Demo3)
+
+
+## M07 Getting Started with Computer Vision
+- [Demo #1 Computer Vision (Python)](./M8-CompVision/Demo1)
+- [Demo #2 Video Analyzer (C#)](./M8-CompVision/Demo2)
+
