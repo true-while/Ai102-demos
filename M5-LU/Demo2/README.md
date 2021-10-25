@@ -11,7 +11,7 @@ This code is provided for demo purposes only for course AI-102.
 
 1. Login to Azure portal and find provisioned before cognitive multi-service.
 
-1. Login to LUIS web portal to build new Application as explained in [tutorial] (https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-how-to-start-new-app)
+1. Login to LUIS web portal to build new Application as explained in [tutorial](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-how-to-start-new-app)
 
 1. Add Intents and entities. Use aliases to provide entities synonyms. 
 
