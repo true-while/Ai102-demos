@@ -45,3 +45,6 @@ This materials is for demonstration only and should be used during deliveries of
 - [Demo #2 Detection Objects](./M9-CustomVision/Demo2)
 - [Demo #3 Fruit Detector on IoT Edge (Python)](./M9-CustomVision/Demo3)
 
+## M10 Detecting, Analyzing, and Recognizing Faces
+- [Demo #1 Face Detection](./M10-Face_API/Demo1)
+- [Demo #2 Face identification](./M10-Face_API/Demo2)

@@ -13,7 +13,7 @@ This code is provided for demo purposes only for course AI-102.
 
 1. Open solution file `FaceAnalysis.sln` in VS 2019.
 
-1. Build and run project. The white background window appears with settings form. If the settings form is not appear by default select 'Show/Hide Settings'
+1. Build and run project. The white background window appears with settings form. If the settings form is not appear by default select 'Show/Hide Settings'. Update form with your key and region of the cognitive service.
 
     ![settings](settings.png)
 
