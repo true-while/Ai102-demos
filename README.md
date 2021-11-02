@@ -54,3 +54,7 @@ This materials is for demonstration only and should be used during deliveries of
 - [Demo #2 Unsupervised Form Recognizer](./M11_Text&Forms/Demo2)
 - [Demo #3 Supervised Form Recognizer (Python)](./M11_Text&Forms/Demo3)
 
+## M12 Knowledge Mining
+- [Demo #1 Azure Search Overview](./M12_Knowledge_Mining/Demo1)
+- [Demo #2 Custom Skill for Azure Search (C#)](./M12_Knowledge_Mining/Demo2)
+- [Demo #3 Knowledge Store](./M12_Knowledge_Mining/Demo3)
