@@ -1,0 +1,10 @@
+{
+  "getWeather.en-us": {
+    "rootDialog": false,
+    "triggers": {
+      "cancel-lu": [
+        "cancel.en-us"
+      ]
+    }
+  }
+}

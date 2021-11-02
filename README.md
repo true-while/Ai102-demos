@@ -52,5 +52,5 @@ This materials is for demonstration only and should be used during deliveries of
 ## M11 Reading Text in Images and Documents
 - [Demo #1 OCR and Read (Async)](./M11_Text&Forms/Demo1)
 - [Demo #2 Unsupervised Form Recognizer](./M11_Text&Forms/Demo2)
-- [Demo #3 Supervised Form Recognizer](./M11_Text&Forms/Demo3)
+- [Demo #3 Supervised Form Recognizer (Python)](./M11_Text&Forms/Demo3)
 

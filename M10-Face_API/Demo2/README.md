@@ -16,7 +16,7 @@ This code is provided for demo purposes only for course AI-102.
 
 1. From Azure portal build Cognitive Face API service with Standard Size. Copy API Key and Endpoint values.
 
-1. Open solution file `FaceIdentifier.sln` in VS 2019.
+1. Open solution file [FaceTutorial.sln](.\FaceTutorial.sln) in VS 2019.
 
 1.  Update/Create `appsettings.json` file with values copied above.
 
@@ -35,7 +35,7 @@ This code is provided for demo purposes only for course AI-102.
 
    ![load](load-bar.png)
 
-1. Click the button 'Brows' to load a photo. Source code includes G7 photos for detection. After 10-15 seconds the faces on the images will have a red border.
+1. Click the button 'Brows' to load a photo. Source code includes G7 photos for detection [g7_1.jpg](.\g7_1.jpg) and [g7_2.jpg](.\g7_2.jpg). After 10-15 seconds the faces on the images will have a red border.
 
    ![analyzed](analyzed.png)
 
@@ -43,4 +43,4 @@ This code is provided for demo purposes only for course AI-102.
 
    ![results](results.png)
 
-1. Alternatively you can demonstrate Face verification algorithm working under the hood of the face recognition on the following [page](https://azure.microsoft.com/en-us/services/cognitive-services/face/)
+1. Alternatively you can demonstrate Face verification algorithm working under the hood of the face recognition on the following [tutorial](https://azure.microsoft.com/en-us/services/cognitive-services/face/)

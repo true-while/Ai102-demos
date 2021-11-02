@@ -1,0 +1,12 @@
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" 
+                     xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-US"> 
+    <voice name="en-US-AriaNeural"> 
+        <mstts:express-as style="cheerful"> 
+          I say tomato 
+        </mstts:express-as> 
+    </voice> 
+    <voice name="en-US-GuyNeural"> 
+        I say <phoneme alphabet="sapi" ph="t ao m ae t ow"> tomato </phoneme>. 
+        <break strength="weak"/>Lets call the whole thing off! 
+    </voice> 
+</speak>
