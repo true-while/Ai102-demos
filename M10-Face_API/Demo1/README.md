@@ -9,7 +9,7 @@ This code is provided for demo purposes only for course AI-102.
 - Visual Studio 2019 or higher
 - [Windows Presentation Foundation](https://visualstudio.microsoft.com/vs/features/wpf/)
 
-## Image Classification 
+## Face Detection
 
 1. Open solution file `FaceAnalysis.sln` in VS 2019.
 

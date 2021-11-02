@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "7c56d755-a824-49b1-8083-05ce19a84923",
+		"name": "FormRecognizer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Recit Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "your-sub-key",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"source\": \"https://www.sunshinesupport.com/Images/receipt_example.jpg\"}"
+				},
+				"url": {
+					"raw": "https://eastus.api.cognitive.microsoft.com/formrecognizer/v2.1/prebuilt/receipt/analyze",
+					"protocol": "https",
+					"host": [
+						"eastus",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"formrecognizer",
+						"v2.1",
+						"prebuilt",
+						"receipt",
+						"analyze"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recit Response",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "your-sub-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://eastus.api.cognitive.microsoft.com/formrecognizer/v2.1/prebuilt/receipt/analyzeResults/8186b93d-8a9f-48ff-bab2-38fb6d688bf9",
+					"protocol": "https",
+					"host": [
+						"eastus",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"formrecognizer",
+						"v2.1",
+						"prebuilt",
+						"receipt",
+						"analyzeResults",
+						"8186b93d-8a9f-48ff-bab2-38fb6d688bf9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invoice Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "your-sub-key",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"source\": \"https://www.paypalobjects.com/digitalassets/c/okm/us/business-resource-center/images/images-for-in-body-articles/Servicing-invoice-template.jpg\" }"
+				},
+				"url": {
+					"raw": "https://eastus.api.cognitive.microsoft.com/formrecognizer/v2.1/prebuilt/invoice/analyze",
+					"protocol": "https",
+					"host": [
+						"eastus",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"formrecognizer",
+						"v2.1",
+						"prebuilt",
+						"invoice",
+						"analyze"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invoice Response",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "your-sub-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://eastus.api.cognitive.microsoft.com/formrecognizer/v2.1/prebuilt/invoice/analyzeResults/2c7eab20-8f6f-4c1b-bc82-80a8541dc387",
+					"protocol": "https",
+					"host": [
+						"eastus",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"formrecognizer",
+						"v2.1",
+						"prebuilt",
+						"invoice",
+						"analyzeResults",
+						"2c7eab20-8f6f-4c1b-bc82-80a8541dc387"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "businessCard Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "your-sub-key",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"source\": \"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/black-and-white-business-card-design-template-492df36ff5e300196934b6a3257b42c0_screen.jpg\"}"
+				},
+				"url": {
+					"raw": "https://eastus.api.cognitive.microsoft.com/formrecognizer/v2.1/prebuilt/businessCard/analyze",
+					"protocol": "https",
+					"host": [
+						"eastus",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"formrecognizer",
+						"v2.1",
+						"prebuilt",
+						"businessCard",
+						"analyze"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "businessCard Response",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "your-sub-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://eastus.api.cognitive.microsoft.com/formrecognizer/v2.1/prebuilt/businessCard/analyzeResults/41c1790e-bab1-4822-b81d-c119f6fc13fd",
+					"protocol": "https",
+					"host": [
+						"eastus",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"formrecognizer",
+						"v2.1",
+						"prebuilt",
+						"businessCard",
+						"analyzeResults",
+						"41c1790e-bab1-4822-b81d-c119f6fc13fd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

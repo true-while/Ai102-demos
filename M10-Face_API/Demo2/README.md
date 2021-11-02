@@ -10,7 +10,7 @@ This code is provided for demo purposes only for course AI-102.
 - NetFramework 4.6
 - [Windows Presentation Foundation](https://visualstudio.microsoft.com/vs/features/wpf/)
 
-## Image Classification 
+## Face identification 
 
 >Note: The code of demo is improved version of face tutorial from [repo](https://github.com/Azure-Samples/Cognitive-Face-CSharp-sample)
 
@@ -27,21 +27,19 @@ This code is provided for demo purposes only for course AI-102.
    }
   ```
 
-1. Build and run project. The project includes 5-persons face library located in the project folder.
-Click on the button **Load Faces** to load and train library. 
+1. Build and run project. The project includes a 5-persons face library located in the project folder. Click on the button **Load Faces** to load and train the library.
 
-   >Note: You can modify face library based on the context of your photos by adding or removing faces in the project folder. The images must be located in folder `FaceLib` in own folder with person's name. eg. `FaceLib\Alex`  Make sure you mark image file as `Build action: content` and `Always copy to output`.
+   >Note: You can modify the face library based on the context of your photos by adding or removing faces in the project folder. The images must be located in folder FaceLib folder with the person's name. eg. `FaceLib\Alex` Make sure you mark the image file as `Build action: content` and `Always copy to output`.
 
-
-1. Loading and train process can takes about 2 min. It is important to have the library trained. Standard tier of the Face API operate faster then free. If the during the raining process you get an error you should start over by closing application.
+1. Loading and train process can take about 2 min. It is important to have the library trained. Standard tier of the Face API operates faster than free. If during the training process you get an error you should start over by closing the application.
 
    ![load](load-bar.png)
 
-1. Click button 'Brows' to load photo. Source code include G7 photos for detection. After 10-15 secondes the faces on the images will have a red border.
+1. Click the button 'Brows' to load a photo. Source code includes G7 photos for detection. After 10-15 seconds the faces on the images will have a red border.
 
    ![analyzed](analyzed.png)
 
-1. To observer results of analyzing pont the mouse cursor to the red rectangle of the face. The details should be updated in the bottom status bar and tooltip
+1. To observe results of analyzing, point the mouse cursor to the red rectangle of the face. The details should be updated in the bottom status bar and tooltip
 
    ![results](results.png)
 

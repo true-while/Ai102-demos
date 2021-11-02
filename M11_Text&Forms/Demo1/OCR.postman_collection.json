@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "0288895b-0471-4222-8325-f3ed4abd0c98",
+		"name": "OCR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reading Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "your-sub-key",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\":\"http://www.thecramped.com/wp-content/uploads/2014/07/handwriting-after.jpg\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://eastus.api.cognitive.microsoft.com/vision/v3.2/read/analyze?language=en",
+					"protocol": "https",
+					"host": [
+						"eastus",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"vision",
+						"v3.2",
+						"read",
+						"analyze"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reading Response",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "your-sub-key",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://eastus.api.cognitive.microsoft.com/vision/v3.2/read/analyzeResults/8851010b-6f60-4550-8bfd-f63848cdd7d1",
+					"protocol": "https",
+					"host": [
+						"eastus",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"vision",
+						"v3.2",
+						"read",
+						"analyzeResults",
+						"8851010b-6f60-4550-8bfd-f63848cdd7d1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OCR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "your-sub-key",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\":\"http://www.thecramped.com/wp-content/uploads/2014/07/handwriting-after.jpg\"}"
+				},
+				"url": {
+					"raw": "https://eastus.api.cognitive.microsoft.com/vision/v3.0/ocr?language=en&detectOrientation=true",
+					"protocol": "https",
+					"host": [
+						"eastus",
+						"api",
+						"cognitive",
+						"microsoft",
+						"com"
+					],
+					"path": [
+						"vision",
+						"v3.0",
+						"ocr"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "detectOrientation",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

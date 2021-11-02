@@ -46,5 +46,11 @@ This materials is for demonstration only and should be used during deliveries of
 - [Demo #3 Fruit Detector on IoT Edge (Python)](./M9-CustomVision/Demo3)
 
 ## M10 Detecting, Analyzing, and Recognizing Faces
-- [Demo #1 Face Detection](./M10-Face_API/Demo1)
-- [Demo #2 Face identification](./M10-Face_API/Demo2)
+- [Demo #1 Face Detection (C#)](./M10-Face_API/Demo1)
+- [Demo #2 Face identification (C#)](./M10-Face_API/Demo2)
+
+## M11 Reading Text in Images and Documents
+- [Demo #1 OCR and Read (Async)](./M11_Text&Forms/Demo1)
+- [Demo #2 Unsupervised Form Recognizer](./M11_Text&Forms/Demo2)
+- [Demo #3 Supervised Form Recognizer](./M11_Text&Forms/Demo3)
+
