@@ -16,7 +16,7 @@ This code is provided for demo purposes only for course AI-102.
 
 1. Test **OCR** mode by choosing `POST OCR` from the library and update `Ocp-Apim-Subscription-Key` in headers with the key you copied above. Then provide a link to the image for reading text from. The link should be updated from `Body` of request. eg [example](https://intelligentkioskstore.blob.core.windows.net/visionapi/suggestedphotos/3.png). Click `Send` button. Response should return you JSON close to following format:
 
-    ![OCR](OCR.png)
+    ![OCR](ocr.png)
 
 1. Test **Read** mode by choice **POST Reading Request** from library and update `Ocp-Apim-Subscription-Key` in headers with key you copied above. Then provide a link to the image for reading text from. The link should be updated from `Body` of request. eg [example](http://www.thecramped.com/wp-content/uploads/2014/07/handwriting-after.jpg). Click `Send` button. 
 
