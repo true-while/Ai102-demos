@@ -14,7 +14,7 @@ This code is provided for demo purposes only for course AI-102.
 
 >Note: The code of demo is improved version of face tutorial from [repo](https://github.com/Azure-Samples/Cognitive-Face-CSharp-sample)
 
-1. From Azure portal build Cognitive Face API service with Standard Size. Copy API Key and Endpoint values.
+1. From Azure portal build Cognitive **Face API** service with **Standard** Size. Copy API Key and Endpoint values.
 
 1. Open solution file [FaceTutorial.sln](.\FaceTutorial.sln) in VS 2019.
 
