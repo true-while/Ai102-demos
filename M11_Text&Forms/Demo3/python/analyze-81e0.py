@@ -13,11 +13,11 @@ def main(argv):
 
 def runAnalysis(input_file, output_file, file_type):
     # Endpoint URL
-    endpoint = "https://form-alex-demo.cognitiveservices.azure.com/"
+    endpoint = ""
     # Subscription Key
-    apim_key = "a252fce60d8844fd81a045aef89d5ce9"
+    apim_key = ""
     # Model ID
-    model_id = "81e0796b-e230-4af3-a2a8-95775a745589"
+    model_id = ""
     # API version
     API_version = "v2.1"
 
