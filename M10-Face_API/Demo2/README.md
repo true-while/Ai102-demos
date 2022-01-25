@@ -16,7 +16,7 @@ This code is provided for demo purposes only for course AI-102.
 
 1. From Azure portal build Cognitive **Face API** service with **Standard** Size. Copy API Key and Endpoint values.
 
-1. Open solution file [FaceTutorial.sln](.\FaceTutorial.sln) in VS 2019.
+1. Open solution file [FaceTutorial.sln](.\FaceTutorial\FaceTutorial.sln) in VS 2019.
 
 1.  Update/Create `appsettings.json` file with values copied above.
 
