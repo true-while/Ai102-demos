@@ -6,10 +6,10 @@ This materials is for demonstration only and should be used during deliveries of
 - no demos
 
 ## M02 Developing AI Apps with Cognitive Services
-- [Demo #1 Provision and calling API (Python)](https://github.com/true-while/Ai102-demos/tree/main/M2-AI_and_ACI/Demo1)
-- [Demo #2 Communication with keyvault (C#)](./M2-AI_and_ACI/Demo2)
-- [Demo #3 Setting up alerts](./M2-AI_and_ACI/Demo3)
-- [Demo #3 Running containers locally and with ACI (Docker, Azure ML)](./M2-AI_and_ACI/Demo4)
+- [Demo #1 Provision and calling API (Python)](./M02-AI_and_ACI/Demo2)
+- [Demo #2 Communication with keyvault (C#)](./M02-AI_and_ACI/Demo2)
+- [Demo #3 Setting up alerts](./M02-AI_and_ACI/Demo3)
+- [Demo #3 Running containers locally and with ACI (Docker, Azure ML)](./M02-AI_and_ACI/Demo4)
 
 ## M03 Getting Started with Natural Language Processing
 - [Demo #1 Text Analytics (C#)](./M3-NLP/Demo1)
