@@ -6,7 +6,8 @@ using System.Net;
 using System.Collections.Generic;
 using Azure;
 using Azure.AI.TextAnalytics;
-
+using static System.Net.WebRequestMethods;
+using Newtonsoft.Json;
 
 namespace text_analysis
 {
@@ -25,25 +26,53 @@ namespace text_analysis
  
         static void Main()
         {
-            string accessKey=  configuration.GetSection("CognitiveServiceKey").Value;
-            string region = configuration.GetSection("CognitiveServicesRegion").Value;
+            string aiAccessKey = configuration.GetSection("CognitiveServiceKey").Value;
+            string aiEndpoint = configuration.GetSection("CognitiveServices").Value;
+
+            string searchAccessKey=  configuration.GetSection("SearchKey").Value;
+            string searchEndpoint = configuration.GetSection("SearchEndpoint").Value;
             string searchTerm  = configuration.GetSection("SearchTerm").Value;
-            string cogendpoint = "https://" + region + ".api.cognitive.microsoft.com/";
+            string cogendpoint = searchEndpoint + "/v7.0/search";
+
 
             try
             {
-                SearchResult result = BingNewsSearch(searchTerm);
-                dynamic jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject(result.jsonResult);
+
+                // Create a dictionary to store relevant headers
+                Dictionary<String, String> relevantHeaders = new Dictionary<String, String>();
+
+                Console.OutputEncoding = Encoding.UTF8;
+
+                Console.WriteLine("Searching the Web for: " + searchTerm);
+
+                // Construct the URI of the search request
+                var uriQuery = cogendpoint + "?q=" + Uri.EscapeDataString(searchTerm);
+
+                // Perform the Web request and get the response
+                WebRequest request = HttpWebRequest.Create(uriQuery);
+                request.Headers["Ocp-Apim-Subscription-Key"] = searchAccessKey;
+                HttpWebResponse response = (HttpWebResponse)request.GetResponseAsync().Result;
+                string json = new StreamReader(response.GetResponseStream()).ReadToEnd();
+
+                // Extract Bing HTTP headers
+                foreach (String header in response.Headers)
+                {
+                    if (header.StartsWith("BingAPIs-") || header.StartsWith("X-MSEdge-"))
+                        relevantHeaders[header] = response.Headers[header];
+                }
+
+   
+                dynamic parsedJson = JsonConvert.DeserializeObject(json);
                 var docs = new Dictionary<int, string>();
                 var key = 0;
-                foreach (var news in jsonObj["value"])
+                foreach (var news in parsedJson["news"].value)
                 {
                     docs[key++] = news.description;
                 }
 
-                AzureKeyCredential credentials = new AzureKeyCredential(accessKey);
-                Uri endpoint = new Uri(cogendpoint);
-                TextAnalyticsClient CogClient = new TextAnalyticsClient(endpoint, credentials);
+                AzureKeyCredential aicredentials = new AzureKeyCredential(aiAccessKey);
+                Uri aiendpoint = new Uri(aiEndpoint);
+                TextAnalyticsClient CogClient = new TextAnalyticsClient(aiendpoint, aicredentials);
 
                 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
@@ -73,6 +102,8 @@ namespace text_analysis
             {
                 Console.WriteLine(ex.Message);
             }
+
+            Console.ReadLine();
         }
 
         static SearchResult BingNewsSearch(string toSearch)
