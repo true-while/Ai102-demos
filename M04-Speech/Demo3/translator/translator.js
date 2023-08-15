@@ -86,9 +86,9 @@ function SpeechSynthesize(targetLanguage, toSynthesize) {
 
         // Configure speech synthesis
         var voices = {
-            "fr": "fr-FR-Julie",
-            "es": "es-ES-Laura",
-            "hi": "hi-IN-Kalpana"
+            "fr": "fr-CA-JeanNeural",
+            "es": "es-ES-ElviraNeural",
+            "hi": "hi-IN-SwaraNeural"
         };
 
         var pstream = sdk.AudioOutputStream.createPullStream();

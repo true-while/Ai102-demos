@@ -80,7 +80,7 @@ function TellTime() {
     
         // Synthesize spoken output
         response_text = `<speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xml:lang='en-US'>
-        <voice name='en-GB-Susan'>
+        <voice name='en-US-JennyMultilingualNeural'>
             ${response_text}
             <break strength='weak'/>
             Time to have a brake!

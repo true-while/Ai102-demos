@@ -12,9 +12,10 @@
   "dependencies": {
     "dotenv": "^9.0.0",
     "fs": "*",
-    "microsoft-cognitiveservices-speech-sdk": "^1.17.0",
+    "microsoft-cognitiveservices-speech-sdk": "^1.31.0",
     "node-microphone": "^0.1.5",
     "path": "^0.12.7",
+    "sox": "^0.1.0",
     "speaker": "^0.5.3",
     "stream": "^0.0.2"
   }
