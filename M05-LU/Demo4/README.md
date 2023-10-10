@@ -7,7 +7,7 @@ This code is provided for demo purposes only for course AI-102.
 
 ### Requirements
 - Azure Subscription
-- Node.js
+- C# dotnet core
 - VS code
 
 ## Speech Integration
@@ -16,15 +16,14 @@ This code is provided for demo purposes only for course AI-102.
 
 1. Use the import option to restore the LUIS model from file `clock.lu`.
 
-1. Settings file .env should be updated based on your values.
+1. Settings file `appsettings.json` should be updated based on your values.
 
-    ```INI
-    LU_APP_ID=your luis app id
-    LU_PREDICTION_REGION=your cs region
-    LU_PREDICTION_KEY=your cs key
+    ```JSON
+    {
+    "LSPredictionEndpoint": "Your LUIS endpoint",
+    "LSPredictionKey": "Your LUIS key"
+    }
     ```
-
-1. Original code and installation instruction can be found in following [repo](https://github.com/true-while/AI-102-AIEngineer-Nodejs)
 
 1. When the application is starting it is expecting input from the microphone in one of the following sentences.
 
